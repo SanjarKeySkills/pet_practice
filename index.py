@@ -12,4 +12,4 @@ list = str.split()
 
 object = Counter(list)
 x = dict(object)
-# print(x)
+print(x)
