@@ -94,13 +94,13 @@ print(result)
 # # print(result)
 
 # ---------------------------------------------------
-def add(a, b):
-    return a + b
+# def add(a, b):
+#     return a + b
 
-def multi(a, b):
-    result = add(a, b)
-    return result * 3
-print(multi(3, 3))
+# def multi(a, b):
+#     result = add(a, b)
+#     return result * 3
+# print(multi(3, 3))
 
 
 # --------------Bill task------------
