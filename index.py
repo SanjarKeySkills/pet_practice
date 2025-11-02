@@ -1,5 +1,7 @@
 def main():
-    print("Hello World!")
+    str = "Hello"
+    return str
+main()
 
 
 
