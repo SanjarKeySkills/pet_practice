@@ -1,7 +1,7 @@
-def main():
-    str = "Hello"
-    return str
-print(main())
+# def main():
+#     str = "Hello"
+#     return str
+# print(main())
 
 
 
