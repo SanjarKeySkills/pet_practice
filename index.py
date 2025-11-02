@@ -1,9 +1,9 @@
 def main():
     str = "Hello"
     return str
-print(str)
-main()
 
+main()
+print(str)
 
 
 from collections import Counter
