@@ -5,3 +5,7 @@ echo "${array[0]}"
 echo "${array[@]}"
 
 echo "${#array[@}"
+
+for item in "${array[@]}"; do
+	echo "$item"
+done
