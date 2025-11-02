@@ -1,6 +1,7 @@
 def main():
     str = "Hello"
     return str
+print(str)
 main()
 
 
