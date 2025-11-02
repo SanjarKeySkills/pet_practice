@@ -1,8 +1,7 @@
 def main():
     str = "Hello"
     return str
-print(str)
-main()
+
 
 
 
@@ -13,4 +12,4 @@ list = str.split()
 
 object = Counter(list)
 x = dict(object)
-print(x)
+# print(x)
