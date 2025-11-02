@@ -1,9 +1,3 @@
-# def main():
-#     str = "Hello"
-#     return str
-# print(main())
-
-
 
 from collections import Counter
 sentence = str(input("Please insert your sentence:"))
