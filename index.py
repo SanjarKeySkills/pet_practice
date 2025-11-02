@@ -1,9 +1,9 @@
 def main():
     str = "Hello"
     return str
-
-main()
 print(str)
+main()
+
 
 
 from collections import Counter
