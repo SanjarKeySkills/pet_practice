@@ -1,0 +1,1 @@
+# this folder is to practice with bash scripts
