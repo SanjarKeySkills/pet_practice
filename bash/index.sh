@@ -9,3 +9,5 @@
 # for item in "${array[@]}"; do
 # 	echo "$item"
 # done
+
+array=(you will be the best programmer in the world)
