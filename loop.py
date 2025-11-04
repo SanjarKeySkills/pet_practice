@@ -6,4 +6,5 @@
 
 # ------------------
 
-color = [ 'red', 'blue', 'green']
+colors = [ 'red', 'blue', 'green']
+print(colors(0))
