@@ -31,6 +31,6 @@
 #     i = i + 3
 
 # -----------------
-
+card_num = "1234-5678-9012-3456"
 for x in reversed(range(1, 11, 3)):
     print(x)
