@@ -31,4 +31,3 @@ i = 0
 while i < len(a):
     x = a[i]
     i = i + 2
-print(x)
