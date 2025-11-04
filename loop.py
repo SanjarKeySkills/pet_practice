@@ -20,7 +20,7 @@
 # ------------------
 
 for i in range(9):
-    i > range[0]
+    i > range[2]
     i = i + 3
     print(i)
 
