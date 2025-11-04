@@ -23,7 +23,7 @@
 #     print(i)
 
 # ------------------
-
+a = []
 i = 0
 while i < len(a):
     print(a[i])
