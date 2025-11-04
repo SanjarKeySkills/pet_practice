@@ -32,6 +32,6 @@
 
 # -----------------
 
-for x in reversed(range(1, 11)):
+for x in reversed(range(1, 6)):
     print(x)
 print("Hello")
