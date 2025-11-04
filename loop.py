@@ -23,7 +23,7 @@
 #     print(i)
 
 # ------------------
-a = []
+a = ['ivi', 'kiwi', 'study', 'buddy', 'heru', 'sheru']
 i = 0
 while i < len(a):
     print(a[i])
