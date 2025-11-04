@@ -3,3 +3,6 @@ sum = 0
 for num in squares:
     sum += num
 print(sum)
+
+# ------------------
+
