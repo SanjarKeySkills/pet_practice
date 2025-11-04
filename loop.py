@@ -32,5 +32,5 @@
 
 # -----------------
 
-for x in reversed(range(1, 11, 2)):
+for x in reversed(range(1, 11, 3)):
     print(x)
