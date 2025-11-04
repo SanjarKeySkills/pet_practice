@@ -19,8 +19,9 @@
 
 # ------------------
 
-# for i in range(9):
-#     print(i)
+for i in range(9):
+    i = i + 3
+    print(i)
 
 # ------------------
 
