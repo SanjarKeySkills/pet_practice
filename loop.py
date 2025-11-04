@@ -30,4 +30,5 @@ i = 0
 #     i = i + 3
 while i < len(a):
     x = a[i]
+    i =+ 2
 print(x)
