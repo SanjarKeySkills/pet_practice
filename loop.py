@@ -29,4 +29,4 @@ i = 0
 #     print(a[i])
 #     i = i + 3
 while i < len(a):
-    print(a)
+    print()
