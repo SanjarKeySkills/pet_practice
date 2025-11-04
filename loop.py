@@ -28,6 +28,6 @@ i = 0
 # while i < len(a):
 #     print(a[i])
 #     i = i + 3
-while i < len(a[i]):
+while i < len(a):
     a.insert(3, 4)
     print(a)
