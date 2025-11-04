@@ -30,4 +30,4 @@ i = 0
 #     i = i + 3
 while i < len(a):
     x = a[4]
-    print(x)
+print(x)
