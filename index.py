@@ -11,7 +11,3 @@ object = Counter(list)
 x = dict(object)
 print(x)
 
-# Пример использования
-my_list = [1, 2, 3, 4, 5]
-result = calculate_sum(my_list)
-print(f"Сумма элементов списка: {result}") # Вывод: Сумма элементов списка: 15
