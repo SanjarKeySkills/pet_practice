@@ -20,3 +20,8 @@ def calculate_sum(numbers):
 my_list = [1, 2, 3, 4, 5]
 result = calculate_sum(my_list)
 print(f"Сумма элементов списка: {result}") # Вывод: Сумма элементов списка: 15
+
+# Пример использования
+my_lis2t = [1, 2, 3, 4, 5]
+result2 = calculate_sum(my_list)
+print(f"Сумма элементов списка: {result2}") # Вывод: Сумма элементов списка: 15
