@@ -29,6 +29,7 @@ maximum_empty = find_maximum_in_list(empty_list)
 def find_minimum_in_list(numbers):
     if not numbers:
         return None
+    min_value = numbers[0]
     
     
     
