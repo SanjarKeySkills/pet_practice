@@ -1,18 +1,18 @@
-def find_maximum_in_list(numbers):
+# def find_maximum_in_list(numbers):
     """
     Finds the maximum value in a given list of numbers.
     Args: numbers: A list of numerical values.
     Returns: The maximum value found in the list, or None if the list is empty. comparing to the first element
     """
-    if not numbers:  # Check if the list is empty
-        return None
-    max_value = numbers[0]  # Initialize max_value with the first element
-    # print(max_value)
-    for number in numbers:
-        if number > max_value:
-            max_value = number  # Update max_value if a larger number is found
-            # print(number)
-    return max_value
+    # if not numbers:  # Check if the list is empty
+    #     return None
+    # max_value = numbers[0]  # Initialize max_value with the first element
+    # # print(max_value)
+    # for number in numbers:
+    #     if number > max_value:
+    #         max_value = number  # Update max_value if a larger number is found
+    #         # print(number)
+    # return max_value
 
 # Example usage:
 # my_list = [3, 1, 4, 1, 5, 9, 2, 6]
