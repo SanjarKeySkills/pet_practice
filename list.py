@@ -1,9 +1,9 @@
 # def find_maximum_in_list(numbers):
-    """
-    Finds the maximum value in a given list of numbers.
-    Args: numbers: A list of numerical values.
-    Returns: The maximum value found in the list, or None if the list is empty. comparing to the first element
-    """
+    # """
+    # Finds the maximum value in a given list of numbers.
+    # Args: numbers: A list of numerical values.
+    # Returns: The maximum value found in the list, or None if the list is empty. comparing to the first element
+    # """
     # if not numbers:  # Check if the list is empty
     #     return None
     # max_value = numbers[0]  # Initialize max_value with the first element
@@ -20,8 +20,8 @@
 # maximum = find_maximum_in_list(my_list)
 # print(f"The maximum value in the list {my_list} is: {maximum}")
 
-empty_list = []
-maximum_empty = find_maximum_in_list(empty_list)
+# empty_list = []
+# maximum_empty = find_maximum_in_list(empty_list)
 # print(f"The maximum value in an empty list is: {maximum_empty}"
 
 # -----------------------------------------
