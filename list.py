@@ -2,7 +2,7 @@ def find_maximum_in_list(numbers):
     """
     Finds the maximum value in a given list of numbers.
     Args: numbers: A list of numerical values.
-    Returns: The maximum value found in the list, or None if the list is empty.
+    Returns: The maximum value found in the list, or None if the list is empty. comparing to the first element
     """
     if not numbers:  # Check if the list is empty
         return None
