@@ -7,6 +7,7 @@ def find_maximum_in_list(numbers):
     if not numbers:  # Check if the list is empty
         return None
     max_value = numbers[0]  # Initialize max_value with the first element
+    print(max_value)
     for number in numbers:
         if number > max_value:
             max_value = number  # Update max_value if a larger number is found
