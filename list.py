@@ -16,7 +16,7 @@ def find_maximum_in_list(numbers):
 
 # Example usage:
 # my_list = [3, 1, 4, 1, 5, 9, 2, 6]
-my_list = [12, 3, 4, 5, 6, 7, 8, 9, 13]
+my_list = [12, 3, 4, 5, 6, 7, 8, 9, 10.1]
 maximum = find_maximum_in_list(my_list)
 print(f"The maximum value in the list {my_list} is: {maximum}")
 
