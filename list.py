@@ -11,7 +11,7 @@ def find_maximum_in_list(numbers):
     for number in numbers:
         if number > max_value:
             max_value = number  # Update max_value if a larger number is found
-            print(number)
+            # print(number)
     return max_value
 
 # Example usage:
@@ -38,3 +38,4 @@ def find_minimum_in_list(numbers):
     
     my_list = [3, 1, 4, 1, 5, 9, 2, 6]
     minimum = find_minimum_in_list(my_list)
+    print(f"The minmum value in the list {my_list} is: {minimum}")
