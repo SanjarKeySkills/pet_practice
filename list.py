@@ -36,6 +36,6 @@ def find_minimum_in_list(numbers):
             min_value = number
         return min_value
     
-    my_list = [3, 1, 4, 1, 5, 9, 2, 6]
+    my_list = [1, 2, 4, 1, 5, 9, 2, 6]
     minimum = find_minimum_in_list(my_list)
     print(f"The minmum value in the list {my_list} is: {minimum}")
