@@ -22,4 +22,4 @@ print(f"The maximum value in the list {my_list} is: {maximum}")
 
 empty_list = []
 maximum_empty = find_maximum_in_list(empty_list)
-# print(f"The maximum value in an empty list is: {maximum_empty}")
+# print(f"The maximum value in an empty list is: {maximum_empty}"
