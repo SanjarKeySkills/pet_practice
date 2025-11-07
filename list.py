@@ -29,8 +29,8 @@
 def find_minimum_in_list(numbers):
     if not numbers:
         return None
-    min_value = numbers[0]
     
+    min_value = numbers[0]
     for number in numbers:
         if number < min_value:
             min_value = number
