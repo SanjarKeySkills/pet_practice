@@ -34,7 +34,7 @@ def find_minimum_in_list(numbers):
     for number in numbers:
         if number < min_value:
             min_value = number
-        return min_value
+    return min_value
     
     min_list = [9, 8, 4, 3, 4, 5, 1, 0.5]
     minimum = find_minimum_in_list(min_list)
