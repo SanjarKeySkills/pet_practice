@@ -32,7 +32,9 @@ def find_minimum_in_list(numbers):
     min_value = numbers[0]
     
     for number in numbers:
-        if number < min_valuen
+        if number < min_value:
+            min_value = number
+        return min_value
     
     
     
