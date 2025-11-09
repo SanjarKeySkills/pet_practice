@@ -7,8 +7,8 @@ union_set = set_A.union(set_B)  # {1, 2, 3, 4, 5, 6}
 intersection_set = set_A.intersection(set_B) # {3, 4}
 
 # ----------------------------
-
-
+# Combinatorics: The itertools module provides functions like permutations, 
+# combinations, and product for generating and analyzing combinatorial objects.
 
 import itertools
     perms = list(itertools.permutations([1, 2, 3])) # [(1, 2, 3), (1, 3, 2), ...]
