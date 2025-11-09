@@ -9,3 +9,6 @@ intersection_set = set_A.intersection(set_B) # {3, 4}
 import itertools
     perms = list(itertools.permutations([1, 2, 3])) # [(1, 2, 3), (1, 3, 2), ...]
     combs = list(itertools.combinations([1, 2, 3, 4], 2)) # [(1, 2), (1, 3), ...]
+
+# ----------------------------
+
