@@ -15,4 +15,5 @@ import itertools
     combs = list(itertools.combinations([1, 2, 3, 4], 2)) # [(1, 2), (1, 3), ...]
 
 # ----------------------------
-
+# Graph Theory: Libraries like NetworkX offer extensive functionalities for creating,
+# manipulating, and analyzing graphs, including algorithms for shortest paths, connectivity, and centrality measures.
