@@ -59,3 +59,45 @@ print(f"Эквивалентны ли выражения: {are_equivalent}")
 
 
 
+# Способ 2: Через таблицу истинности (ручной метод)
+def evaluate_expression(p_val, q_val, r_val):
+    """Вычисляет значение исходного ДНФ выражения"""
+    return (
+        (p_val and not q_val) or
+        (p_val and not r_val) or
+        (q_val and not p_val) or
+        (q_val and not r_val) or
+        (r_val and not p_val) or
+        (r_val and not q_val)
+    )
+
+def evaluate_target(p_val, q_val, r_val):
+    """Вычисляет значение целевого КНФ выражения"""
+    return (
+        (p_val or not r_val) and
+        (q_val or not r_val) and
+        (r_val or not p_val) and
+        (p_val or q_val or r_val) and
+        (not p_val or not q_val or not r_val)
+    )
+
+# Проверяем все комбинации
+print("Таблица истинности:")
+print("p q r | ДНФ | КНФ | Совпадают?")
+print("-" * 30)
+
+all_match = True
+for p_val in [False, True]:
+    for q_val in [False, True]:
+        for r_val in [False, True]:
+            dnf_result = evaluate_expression(p_val, q_val, r_val)
+            cnf_result = evaluate_target(p_val, q_val, r_val)
+            match = dnf_result == cnf_result
+            
+            print(f"{int(p_val)} {int(q_val)} {int(r_val)} |  {int(dnf_result)}  |  {int(cnf_result)}  |    {match}")
+            
+            if not match:
+                all_match = False
+
+print(f"\nВыражения эквивалентны: {all_match}")
+
