@@ -5,3 +5,7 @@ set_A = {1, 2, 3, 4}
 set_B = {3, 4, 5, 6}
 union_set = set_A.union(set_B)  # {1, 2, 3, 4, 5, 6}
 intersection_set = set_A.intersection(set_B) # {3, 4}
+
+
+# Способ 1: Используем библиотеку sympy (символьные вычисления)
+
