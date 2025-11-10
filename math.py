@@ -104,3 +104,51 @@ print(f"\nВыражения эквивалентны: {all_match}")
 
 # Способ 3: Пошаговое преобразование через СКНФ
 
+def build_cnf_from_truth_table():
+    """Строит СКНФ по таблице истинности"""
+    
+    # Находим ложные строки для исходного выражения
+    false_rows = []
+    
+    for p_val in [False, True]:
+        for q_val in [False, True]:
+            for r_val in [False, True]:
+                if not evaluate_expression(p_val, q_val, r_val):
+                    false_rows.append((p_val, q_val, r_val))
+    
+    print("Строки, где выражение ложно:")
+    for row in false_rows:
+        print(f"  p={row[0]}, q={row[1]}, r={row[2]}")
+    
+    # Строим дизъюнкции для каждой ложной строки
+    cnf_clauses = []
+    
+    for p_val, q_val, r_val in false_rows:
+        clause = []
+        if not p_val: clause.append('p')
+        if not q_val: clause.append('q') 
+        if not r_val: clause.append('r')
+        if p_val: clause.append('¬p')
+        if q_val: clause.append('¬q')
+        if r_val: clause.append('¬r')
+        cnf_clauses.append(clause)
+    
+    return cnf_clauses, false_rows
+
+# Выполняем преобразование
+cnf_clauses, false_rows = build_cnf_from_truth_table()
+
+print("\nСКНФ дизъюнкции (максимальные клаузы):")
+for clause in cnf_clauses:
+    print(f"  ({' ∨ '.join(clause)})")
+
+print(f"\nИсходная СКНФ: (p ∨ q ∨ r) ∧ (¬p ∨ ¬q ∨ ¬r)")
+
+# Покажем, как получить дополнительные клаузы
+print("\nДополнительные клаузы через резолюцию:")
+print("Из (p ∨ q ∨ r) и (¬p ∨ ¬q ∨ ¬r) можно вывести:")
+
+# Резолюция с добавлением вспомогательных дизъюнкций
+print("  Добавляем (p ∨ ¬p), (q ∨ ¬q), (r ∨ ¬r)")
+print("  Резолюция дает:")
+print("    (p ∨ ¬r) ∧ (q ∨ ¬r) ∧ (r ∨ ¬p)")
