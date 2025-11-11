@@ -206,3 +206,11 @@ X = np.array([1, 2, 3, 4, 5])
 Y = np.array([2, 3, 5, 4, 6])
 
 
+# --- 2. Рассчитаем средние значения ---
+mean_X = np.mean(X)
+mean_Y = np.mean(Y)
+
+print(f"Среднее X̄ = {mean_X:.2f}")
+print(f"Среднее Ȳ = {mean_Y:.2f}")
+
+
