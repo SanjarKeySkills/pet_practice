@@ -226,3 +226,10 @@ cov_XY = np.sum((X - mean_X)*(Y - mean_Y)) / (len(X) - 1)
 print(f"Выборочная ковариация Cov(X,Y) = {cov_XY:.2f}")
 
 
+# --- 5. Коэффициенты линейной регрессии ---
+b = cov_XY / var_X
+a = mean_Y - b * mean_X
+
+print(f"\nКоэффициенты линейной регрессии:")
+print(f"b' (наклон) = {b:.2f}")
+print(f"a' (свободный член) = {a:.2f}")
