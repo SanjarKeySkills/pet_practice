@@ -241,3 +241,7 @@ Y_pred = a + b * X
 print("\nПредсказанные значения Y':")
 print(np.round(Y_pred, 2))
 
+
+
+
+
