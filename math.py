@@ -220,3 +220,9 @@ print(f"Выборочная дисперсия Var(X) = {var_X:.2f}")
 
 
 
+# --- 4. Выборочная ковариация между X и Y ---
+# Cov(X,Y) = Σ[(Xi - X̄)(Yi - Ȳ)] / (n - 1)
+cov_XY = np.sum((X - mean_X)*(Y - mean_Y)) / (len(X) - 1)
+print(f"Выборочная ковариация Cov(X,Y) = {cov_XY:.2f}")
+
+
