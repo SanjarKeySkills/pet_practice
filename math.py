@@ -246,5 +246,14 @@ print(np.round(Y_pred, 2))
 print("\nСравнение фактических и предсказанных значений:")
 for xi, yi, ypi in zip(X, Y, Y_pred):
     print(f"X={xi},  Y={yi},  Y'={ypi:.2f}")
+    
+# --- 8. Проверим всё встроенными функциями numpy ---
+# numpy.cov возвращает ковариационную матрицу
+cov_matrix = np.cov(X, Y, ddof=1)  # ddof=1 → выборочная
+b_np = cov_matrix[0,1] / cov_matrix[0,0]
+a_np = mean_Y - b_np * mean_X
+
+print("\nПроверка с NumPy:")
+print(f"b' = {b_np:.2f}, a' = {a_np:.2f}")
 
 
