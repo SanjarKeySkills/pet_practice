@@ -213,4 +213,10 @@ mean_Y = np.mean(Y)
 print(f"Среднее X̄ = {mean_X:.2f}")
 print(f"Среднее Ȳ = {mean_Y:.2f}")
 
+# --- 3. Выборочная дисперсия X ---
+# Var(X) = Σ(Xi - X̄)² / (n - 1)
+var_X = np.sum((X - mean_X)**2) / (len(X) - 1)
+print(f"Выборочная дисперсия Var(X) = {var_X:.2f}")
+
+
 
