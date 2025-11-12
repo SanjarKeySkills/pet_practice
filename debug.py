@@ -7,4 +7,4 @@ if a < b:
 third = 18
 first = 10
 second = 20
-if first + second > c:
+if first + second > third:
