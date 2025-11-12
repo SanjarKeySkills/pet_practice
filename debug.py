@@ -1,7 +1,7 @@
 a = 33
 b = 200
 if a < b:
-	print("b is bigger than a")
+	# print("b is bigger than a")
  
 # ----------------------
 third = 180
