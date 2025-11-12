@@ -7,5 +7,5 @@ if a < b:
 num = 180
 first = 10
 second = 20
-if first + second > third:
+if first + second > num:
     print("equation is not mine")
