@@ -8,3 +8,4 @@ third = 18
 first = 10
 second = 20
 if first + second > third:
+    print("equation is not mine")
