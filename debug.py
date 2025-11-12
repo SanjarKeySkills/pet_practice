@@ -4,7 +4,7 @@ if a < b:
 	print("b is bigger than a")
  
 # ----------------------
-third = 18
+third = 180
 first = 10
 second = 20
 if first + second > third:
