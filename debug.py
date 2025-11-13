@@ -20,7 +20,7 @@ print(sentence)
 
 str = "If you want your classes to be reusable then you will find that different clients have different output requirements let the client not the class worry about the output side of things."
 
-list = sentence.split()
+list = sentence.splite()
 
 object = Counter(list)
 x = dict(object)
