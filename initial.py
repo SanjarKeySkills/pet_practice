@@ -200,5 +200,7 @@ print(result)
 # ------------------
 a = 90
 b = 160
-c = a + b
+def add(a, b):
+    return a + b
+
 print(c)
