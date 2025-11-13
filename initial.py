@@ -201,6 +201,4 @@ print(result)
 a = 90
 b = 160
 def add(a, b):
-    return a + b
-
-print(c)
+    print(return a + b)
