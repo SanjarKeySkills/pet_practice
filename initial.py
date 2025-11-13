@@ -196,3 +196,9 @@ print(list)
 object = Counter(list)
 x = dict(object)
 print(x)
+
+# ------------------
+a = 90
+b = 160
+c = a + b
+    return c
