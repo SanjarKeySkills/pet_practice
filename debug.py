@@ -5,9 +5,12 @@
  
 # ----------------------
 
-first = 10
-second = 20
-num = 180
+# first = 10
+# second = 20
+# num = 180
 
-if first + second > num:
-    print("equation is not mine")
+# if first + second > num:
+#     print("equation is not mine")
+
+# -----------------------
+
