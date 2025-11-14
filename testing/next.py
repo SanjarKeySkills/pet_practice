@@ -23,3 +23,4 @@ class TestCalc(unittest.TestCase):
         self.assertEqual(test.add(10, 9), 19)
 
 if __name__ == '__main__':
+    unittest.main()
