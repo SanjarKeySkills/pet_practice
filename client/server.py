@@ -2,4 +2,4 @@ import socket
 import threading
 
 PORT = 5050
-SERVER = ""
+SERVER = "255.255."
