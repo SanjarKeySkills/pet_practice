@@ -1,4 +1,5 @@
 import socket
 import threading
 
-PORT = 505
+PORT = 5050
+SERVER = ""
