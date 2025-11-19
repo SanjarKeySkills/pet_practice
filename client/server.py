@@ -11,3 +11,6 @@ server.bind(ADDR)
 
 def handle_client(conn, addr):
     pass
+
+def start():
+    pass
