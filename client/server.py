@@ -14,3 +14,5 @@ def handle_client(conn, addr):
 
 def start():
     pass
+
+print("[STARTING server is starting")
