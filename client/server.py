@@ -18,6 +18,7 @@ def handle_client(conn, addr):
         connected = True
         while connected:
             #decode this function from its bite format to str using utf-8 format
+        msg_length = conn.recv(HEADER).decode(FORMAT)
 
 def start():
     pass
