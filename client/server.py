@@ -26,7 +26,7 @@ def handle_client(conn, addr):
             msg_length = conn.recv(msg_length).decode(FORMAT)
             if msg == DISCONNECT_MESSAGE:
                 connected = False
-		print(f"[{addr}] {msg}") # handling the disconnection ckearly
+		print(f"[{addr}] {msg}") # handling the disconnection clearly
   
 def start():
     pass
