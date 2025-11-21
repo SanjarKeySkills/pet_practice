@@ -24,6 +24,8 @@ def handle_client(conn, addr):
         if msg_length:
             msg_length = int(msg_length)
             msg_length = conn.recv(msg_length).decode(FORMAT)
+            if msg == DISCONNECT_MESSAGE:
+                connected = False
 
 def start():
     pass
