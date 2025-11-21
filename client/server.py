@@ -11,7 +11,7 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
 
 def handle_client(conn, addr):
-    pass
+    # handle communication between client and server
 
 def start():
     pass
