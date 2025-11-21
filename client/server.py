@@ -21,6 +21,8 @@ def handle_client(conn, addr):
             #decode this function from its bite format to str using utf-8 format
         msg_length = conn.recv(HEADER).decode(FORMAT)
         #how many bites we are going to receive
+        if msg_length:
+            
 
 def start():
     pass
