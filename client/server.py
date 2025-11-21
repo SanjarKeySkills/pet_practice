@@ -12,6 +12,7 @@ server.bind(ADDR)
 
 def handle_client(conn, addr):
     # handle communication between client and server
+    print(f"[NEW CONNECTION] {addr} connected.")
 
 def start():
     pass
