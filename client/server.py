@@ -1,7 +1,7 @@
 import socket
 import threading
 
-PORT = 5050 # SERVER = "192.168.31.127"
+PORT = 5050 # SERVER = "192.168.31.127" на этом порте сервер будет слушать входящие сообщения
 SERVER = socket.gethostbyname(socket.gethostname()) #gethostname - полуаем имя компьютера
 # gethostbyname - получаем по имени IP локальные адреса
 ADDR = (SERVER, PORT) # tuple
