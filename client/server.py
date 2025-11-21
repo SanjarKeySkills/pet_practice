@@ -19,14 +19,14 @@ def handle_client(conn, addr):
         connected = True
         while connected:
             #decode this function from its bite format to str using utf-8 format
-        msg_length = conn.recv(HEADER).decode(FORMAT)
-        #how many bites we are going to receive
-        if msg_length:
-            msg_length = int(msg_length)
-            msg_length = conn.recv(msg_length).decode(FORMAT)
-            if msg == DISCONNECT_MESSAGE:
-                connected = False
-		print(f"[{addr}] {msg}") # handling the disconnection clearly
+			msg_length = conn.recv(HEADER).decode(FORMAT)
+			#how many bites we are going to receive
+			if msg_length:
+				msg_length = int(msg_length)
+				msg_length = conn.recv(msg_length).decode(FORMAT)
+				if msg == DISCONNECT_MESSAGE:
+					connected = False
+			print(f"[{addr}] {msg}") # handling the disconnection clearly
   
 def start():
     pass
