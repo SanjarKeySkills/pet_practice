@@ -13,6 +13,11 @@ server.bind(ADDR)
 def handle_client(conn, addr):
     # handle communication between client and server
     print(f"[NEW CONNECTION] {addr} connected.")
+    
+    while True:
+        connected = True
+        while connected:
+            #decode this function from its bite format to str using utf-8 format
 
 def start():
     pass
