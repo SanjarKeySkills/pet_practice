@@ -5,6 +5,7 @@ PORT = 5050 # SERVER = "192.168.31.127" на этом порте сервер б
 SERVER = socket.gethostbyname(socket.gethostname()) #gethostname - полуаем имя компьютера
 # gethostbyname - получаем по имени IP локальные адреса
 ADDR = (SERVER, PORT) # tuple
+FORMAT = 'UTF-8'
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
