@@ -7,7 +7,7 @@ SERVER = socket.gethostbyname(socket.gethostname()) #gethostname - полуае�
 # gethostbyname - получаем по имени IP локальные адреса
 ADDR = (SERVER, PORT) # tuple
 FORMAT = 'UTF-8'
-DISCONNECT_MESSAGE
+DISCONNECT_MESSAGE:
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(ADDR)
