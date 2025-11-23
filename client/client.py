@@ -7,3 +7,6 @@ SERVER = socket.gethostbyname(socket.gethostname()) #gethostname - полуае�
 ADDR = (SERVER, PORT) # tuple
 FORMAT = 'UTF-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
+
+client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+client.connect(ADDR)
