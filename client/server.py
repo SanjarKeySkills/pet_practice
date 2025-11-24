@@ -1,11 +1,11 @@
 import socket
 import threading
 
-HEADER = 64 # 64 tells msg that is going to come next Header = 64 symbols
-PORT = 5050 # SERVER = "192.168.31.127" на этом порте сервер будет слушать входящие сообщения
+HEADER = 64
+PORT = 5050
 SERVER = socket.gethostbyname(socket.gethostname()) #gethostname - полуаем имя компьютера
 # gethostbyname - получаем по имени IP локальные адреса
-ADDR = (SERVER, PORT) # tuple
+ADDR = (SERVER, PORT)
 FORMAT = 'UTF-8'
 DISCONNECT_MESSAGE = "!DISCONNECT"
 
@@ -28,10 +28,8 @@ def handle_client(conn, addr):
 				if msg == DISCONNECT_MESSAGE:
 					connected = False
 			
-   			print(f"[{addr}] {msg}") # handling the disconnection clearly
+   					print(f"[{addr}] {msg}") # handling the disconnection clearly
 			conn.close() #closed disconnection
-
-
 
 def start():
     pass
