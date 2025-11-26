@@ -81,3 +81,37 @@ print(company.financial_report())
 
 # --------------------------------
 # Работа с pandas для анализа нескольких компаний
+
+import pandas as pd
+import numpy as np
+
+def create_financial_dataset():
+    """Создание тестового датасета с финансовыми показателями"""
+    data = {
+        'company': ['Company_A', 'Company_B', 'Company_C', 'Company_D'],
+        'revenue': [1000000, 1500000, 800000, 1200000],
+        'cogs': [600000, 900000, 480000, 720000],
+        'operating_expenses': [200000, 300000, 160000, 240000],
+        'depreciation': [50000, 75000, 40000, 60000],
+        'amortization': [30000, 45000, 24000, 36000]
+    }
+    return pd.DataFrame(data)
+
+def calculate_ebitda_df(df):
+    """Расчет EBITDA для DataFrame"""
+    df = df.copy()
+    df['ebit'] = df['revenue'] - df['cogs'] - df['operating_expenses']
+    df['ebitda'] = df['ebit'] + df['depreciation'] + df['amortization']
+    df['ebitda_margin'] = (df['ebitda'] / df['revenue'] * 100).round(2)
+    return df
+
+# Анализ нескольких компаний
+df = create_financial_dataset()
+df_analysis = calculate_ebitda_df(df)
+
+print("Финансовый анализ компаний:")
+print(df_analysis.to_string(index=False))
+
+# Дополнительный анализ
+print(f"\nСредняя маржа EBITDA: {df_analysis['ebitda_margin'].mean():.2f}%")
+print(f"Лучшая маржа EBITDA: {df_analysis['ebitda_margin'].max():.2f}%")
