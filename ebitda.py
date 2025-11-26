@@ -17,4 +17,6 @@ ebitda = calculate_ebitda_basic(revenue, cogs, operating_expenses, depreciation,
 print(f"EBITDA: {ebitda:,.2f}")  # EBITDA: 280,000.00
 
 # ---------------------------------------
+# Расчет через операционную прибыль (EBIT)
+
 
