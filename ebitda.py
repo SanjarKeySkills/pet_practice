@@ -79,3 +79,5 @@ company = Company(
 
 print(company.financial_report())
 
+# --------------------------------
+# Работа с pandas для анализа нескольких компаний
