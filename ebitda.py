@@ -15,3 +15,6 @@ amortization = 30000         # Амортизация НМА
 
 ebitda = calculate_ebitda_basic(revenue, cogs, operating_expenses, depreciation, amortization)
 print(f"EBITDA: {ebitda:,.2f}")  # EBITDA: 280,000.00
+
+# ---------------------------------------
+
