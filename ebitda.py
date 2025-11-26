@@ -32,3 +32,5 @@ amortization = 30000
 
 ebitda = calculate_ebitda_from_ebit(ebit, depreciation, amortization)
 print(f"EBITDA: {ebitda:,.2f}")
+
+# ------------------------------------------------
