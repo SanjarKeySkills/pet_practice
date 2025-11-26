@@ -83,7 +83,7 @@ print(company.financial_report())
 # Работа с pandas для анализа нескольких компаний
 
 import pandas as pd
-import numpy as np
+# import numpy as np
 
 def create_financial_dataset():
     """Создание тестового датасета с финансовыми показателями"""
