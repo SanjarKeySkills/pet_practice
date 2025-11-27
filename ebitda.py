@@ -138,4 +138,4 @@ def ebitda_calculator():
         print("Ошибка! Вводите только числа.")
 
 # Запуск калькулятора
-# ebitda_calculator()
+ebitda_calculator()
