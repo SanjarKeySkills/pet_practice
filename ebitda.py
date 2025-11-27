@@ -26,7 +26,7 @@
 #     return ebit + depreciation + amortization
 
 # Пример
-ebit = 200000  # Операционная прибыль
+# ebit = 200000  # Операционная прибыль
 # depreciation = 50000
 # amortization = 30000
 
