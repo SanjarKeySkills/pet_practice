@@ -139,3 +139,39 @@ def ebitda_calculator():
 
 # Запуск калькулятора
 ebitda_calculator()
+# --------------------------
+class InvestmentProject:
+    def __init__(self, initial_investment, cash_flows):
+        self.initial_investment = initial_investment
+        self.cash_flows = cash_flows
+        self.all_cash_flows = [initial_investment] + cash_flows
+    
+    def npv(self, rate):
+        """Рассчитывает NPV для проекта"""
+        return sum(cf / (1 + rate) ** i for i, cf in enumerate(self.all_cash_flows))
+    
+    def irr(self, guess=0.1, max_iter=1000, tolerance=1e-6):
+        """Рассчитывает внутреннюю норму доходности (IRR)"""
+        x = guess
+        for i in range(max_iter):
+            npv_value = self.npv(x)
+            npv_derivative = sum(-i * cf / (1 + x) ** (i + 1) for i, cf in enumerate(self.all_cash_flows) if i > 0)
+            
+            if abs(npv_value) < tolerance:
+                return x
+            
+            if abs(npv_derivative) < tolerance:
+                break
+                
+            x = x - npv_value / npv_derivative
+        
+        return x
+
+# Использование класса
+project = InvestmentProject(initial_investment=-1000, cash_flows=[300, 400, 500, 200])
+
+npv_result = project.npv(0.1)
+irr_result = project.irr()
+
+print(f"NPV при 10%: {npv_result:.2f}")
+print(f"IRR проекта: {irr_result:.2%}")
