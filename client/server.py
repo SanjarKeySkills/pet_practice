@@ -43,10 +43,15 @@ class HTTPRequest:
 			if len(parts) == 3:
 				self.method, full_path, self.version = parts
 
-			path_parts = full_path.split('?', 1)
-			self.path = path_parts[0]
-			if len(path_parts) > 1:
-				self.query_params = self.parse_query_params(path_parts[1])
+				path_parts = full_path.split('?', 1)
+				self.path = path_parts[0]
+				if len(path_parts) > 1:
+					self.query_params = self.parse_query_params(path_parts[1])
+			i = 1
+			while i < len(lines) and lines[1]:
+				if ':' in lines[i]:
+					key, value = lines[i].split(':', 1)
+					self.headers[key.strip()] = value.strip()
     
 
     
