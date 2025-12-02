@@ -56,6 +56,7 @@ class HTTPRequest:
     
 			if i + 1 < len(lines):
 				self.body = '\r\n'.join(lines[I+1:])
+    
 		except Exception as e:
 			print(f"Error parsing request: {e}")
     
