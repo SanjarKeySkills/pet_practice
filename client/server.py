@@ -46,7 +46,7 @@ class HTTPRequest:
 			path_parts = full_path.split('?', 1)
 			self.path = path_parts[0]
 			if len(path_parts) > 1:
-				self.query_params
+				self.query_params = self.parse_query_params(path_parts[1])
     
 
     
