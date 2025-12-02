@@ -53,6 +53,7 @@ class HTTPRequest:
 					key, value = lines[i].split(':', 1)
 					self.headers[key.strip()] = value.strip()
 				i += 1
+    
 			if i + 1 < len(lines):
 				self.body = '\r\n'.join(lines[I+1:])
 		except Exception as e:
