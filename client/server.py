@@ -31,6 +31,11 @@ class HTTPRequest:
         self.body = ""
         self.query_params = {}
         self.parse_request(raw_request)
+
+	def parse_request(self, raw_request):
+		try:
+			lines = raw_request.split('\r\n')
+ 
 def handle_client(conn, addr):
     # handle communication between client and server
     print(f"[NEW CONNECTION] {addr} connected.")
