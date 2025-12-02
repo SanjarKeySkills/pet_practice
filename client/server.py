@@ -35,6 +35,9 @@ class HTTPRequest:
 	def parse_request(self, raw_request):
 		try:
 			lines = raw_request.split('\r\n')
+			if not lines:
+				return
+
  
 def handle_client(conn, addr):
     # handle communication between client and server
