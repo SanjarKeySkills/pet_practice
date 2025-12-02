@@ -52,6 +52,7 @@ class HTTPRequest:
 				if ':' in lines[i]:
 					key, value = lines[i].split(':', 1)
 					self.headers[key.strip()] = value.strip()
+				i += 1
     
 
     
