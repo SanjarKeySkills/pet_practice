@@ -19,7 +19,18 @@ users_db = [
 	{"id": 1, "name": "John Doe", "email": "john@example.com", "active": True},
 	{"id": 2, "name": "Jane Smith", "email": "jane@example.com", "active": True},
 ]
+next_user_id = 3
 
+class HTTPRequest:
+    
+    def _init_(self, raw_request):
+        self.method = ""
+        self.path = ""
+        self.version = ""
+        self.headers = {}
+        self.body = ""
+        self.query_params = {}
+        self.parse_request(raw_request)
 def handle_client(conn, addr):
     # handle communication between client and server
     print(f"[NEW CONNECTION] {addr} connected.")
