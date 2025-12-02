@@ -39,7 +39,8 @@ class HTTPRequest:
 				return
 			request_line = lines[0]
 			parts = request_line.split(' ')
-			if len(path_parts) > 1
+			if len(path_parts) > 1:
+				self.query_params
  
 def handle_client(conn, addr):
     # handle communication between client and server
