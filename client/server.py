@@ -40,7 +40,7 @@ class HTTPRequest:
 			
    			request_line = lines[0]
    			parts = request_line.split(' ')
-			if len(path_parts) > 1:
+			if len(parts) > 1:
 				self.query_params = self.parse_query_params(path_parts[1])
 			i = 1
 
