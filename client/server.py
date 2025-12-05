@@ -41,7 +41,24 @@ def create_http_responce(status_code, body, content_type="text/plain"):
 	return responce
 
 def handle_http_request(request):
-    # this plase where I stopped
+	try:
+		lines = request.split('r\n')
+		request_line = lines[0]
+  		parts = request_line.split('')
+    
+		if len(parts) != 3:
+			return create_http_responce(400, "Bad Request")
+
+		method, path, version = parts
+		print(f"[HTTP] {method} {path}")
+	
+		if path == "/":
+			html = "<html><body><h1>Welcome to Server</h1></body></html>"
+			return create_http_responce(200, "Welcome to Sam's Server")
+# elif
+    
+    
+    
 
 
 class HTTPRequest:
