@@ -56,8 +56,8 @@ def handle_http_request(request):
 			html = "<html><body><h1>Welcome to Server</h1></body></html>"
 			return create_http_responce(200, "Welcome to Sam's Server")
 
-		elif path == "/":
-			# status_info = f"Server: {SERVER}\nTime: {datetime.now()}\nConnections: {threading.active_count() - 1}"
+		elif path == "/staus":
+			status_info = f"Server: {SERVER}\nTime: {datetime.now()}\nConnections: {threading.active_count() - 1}"
 # elif
     
     
