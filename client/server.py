@@ -58,7 +58,12 @@ def handle_http_request(request):
 
 		elif path == "/staus":
 			status_info = f"Server: {SERVER}\nTime: {datetime.now()}\nConnections: {threading.active_count() - 1}"
-# elif
+			return create_http_responce(200, status_info)
+		
+		elif path == "api/data":
+			json_data = '{"status": "success", "data": API Responce" ome json here"}'
+   
+		
     
     
     
