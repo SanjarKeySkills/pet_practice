@@ -121,9 +121,10 @@ class HTTPRequest:
 				if msg_length:
 					msg_length = int(msg_length)
 					msg = conn.recv(msg_length).decode(FORMAT)
-     #http processing
+     #http request processing
 				if msg.startswith("GET") or msg.startswith("POST"):
 					http_response = handle_http_request(msg)
+
 
 
 def start():
