@@ -121,6 +121,8 @@ class HTTPRequest:
 				if msg_length:
 					msg_length = int(msg_length)
 					msg = conn.recv(msg_length).decode(FORMAT)
+     #http processing
+
 
 def start():
     pass
