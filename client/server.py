@@ -69,10 +69,8 @@ def handle_http_request(request):
 	except Exception as e:
 		return create_http_responce(500, f"Server ERror: {e}")
    
-
-    
-    
-    
+   
+       
 
 
 class HTTPRequest:
@@ -114,8 +112,8 @@ class HTTPRequest:
 		except Exception as e:
 			print(f"Error parsing request: {e}")
     
-
-    
+	def handle_client(conn, addr): #http request
+		print(f"[Warning! New Collection] {addr} connected.")
     
 
 def start():
