@@ -133,8 +133,7 @@ class HTTPRequest:
 			except:
 				print(f"[ERROR] with {addr}: {e}")
 				break
-		
-		conn.close()
+		conn.close() #closed in case of disconnection
 
 
 def start():
