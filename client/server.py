@@ -124,6 +124,7 @@ class HTTPRequest:
      #http request processing
 				if msg.startswith("GET") or msg.startswith("POST"):
 					http_response = handle_http_request(msg)
+					conn.send(http_response.encode(FORMAT))
 
 
 
