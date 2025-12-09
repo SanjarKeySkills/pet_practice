@@ -133,6 +133,8 @@ class HTTPRequest:
 			except:
 				print(f"[ERROR] with {addr}: {e}")
 				break
+		
+		conn.close()
 
 
 def start():
