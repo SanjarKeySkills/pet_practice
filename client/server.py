@@ -126,6 +126,10 @@ class HTTPRequest:
 					http_response = handle_http_request(msg)
 					conn.send(http_response.encode(FORMAT))
 				elif msg == DISCONNECT_MESSAGE:
+					connected = False
+					print(f"[{addr}] disconnected")
+				else:
+					print(f"[{addr}] {msg}")
 
 
 
