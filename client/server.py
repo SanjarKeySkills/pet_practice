@@ -66,6 +66,8 @@ def handle_http_request(request):
 			return create_http_responce(200, json_data, "application/json")
 		else:
 			return create_http_responce(400, "404 - Page not found")
+	except Exception as e:
+		return create_http_responce(500, f"Server ERror: {e}")
    
 
     
