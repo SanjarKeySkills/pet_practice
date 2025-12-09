@@ -118,6 +118,9 @@ class HTTPRequest:
 		while connected: #the will work if we receive data from client
 			try:
 				msg_length = conn.recv(HEADER).decode(FORMAT)
+				if msg_length:
+					msg_length = int(msg_length)
+					msg = conn.recv(msg_length).decode(FORMAT)
 
 def start():
     pass
