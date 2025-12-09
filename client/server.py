@@ -114,7 +114,8 @@ class HTTPRequest:
     
 	def handle_client(conn, addr): #http request
 		print(f"[Warning! New Collection] {addr} connected.")
-    
+		connect = True
+		while connected: #the will work if we receive data from client
 
 def start():
     pass
