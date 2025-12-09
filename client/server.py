@@ -116,6 +116,8 @@ class HTTPRequest:
 		print(f"[Warning! New Collection] {addr} connected.")
 		connect = True
 		while connected: #the will work if we receive data from client
+			try:
+				msg_length = conn.recv(HEADER).decode(FORMAT)
 
 def start():
     pass
