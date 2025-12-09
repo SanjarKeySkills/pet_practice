@@ -132,6 +132,7 @@ class HTTPRequest:
 					print(f"[{addr}] {msg}")
 			except:
 				print(f"[ERROR] with {addr}: {e}")
+				break
 
 
 def start():
