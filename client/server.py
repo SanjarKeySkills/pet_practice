@@ -62,8 +62,12 @@ def handle_http_request(request):
 		
 		elif path == "api/data":
 			json_data = '{"status": "success", "data": API Responce" ome json here"}'
+	
+			return create_http_responce(200, json_data, "application/json")
+		else:
+			return create_http_responce(400, "404 - Page not found")
    
-		
+
     
     
     
