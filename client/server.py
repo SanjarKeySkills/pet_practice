@@ -130,7 +130,8 @@ class HTTPRequest:
 					print(f"[{addr}] disconnected")
 				else:
 					print(f"[{addr}] {msg}")
-
+			except:
+				print(f"[ERROR] with {addr}: {e}")
 
 
 def start():
