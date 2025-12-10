@@ -21,6 +21,34 @@ users_db = [
 ]
 next_user_id = 3
 
+class HTTPReuest:
+    def _init_(self, raw_request):
+        self.method = ""
+        self.path = ""
+        self.version = ""
+        self.headers = {}
+        self.body = ""
+        self.query_params = {}
+        self.parse_request(raw_request)
+    
+    def parse_request(self, raw_request):
+        try:
+            lines = raw_request.split('\r\n')
+            if not lines:
+                return
+            
+            request_line = lines[0]
+            parts = request_line.split(' ')
+            if len(parts) == 3:
+                self.method, full_path, self.version = parts
+                
+                path_parts = full_path.split('?', 1)
+                self.path = path_parts[0]
+                if len(path_parts) > 1:
+                    self.query_params = self.parse_query_params(path_parts[1])
+    
+    
+    
 def create_http_responce(status_code, body, content_type="text/plain"):
     status_codes = {
 		200: "200 OK",
