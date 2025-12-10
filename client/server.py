@@ -15,11 +15,11 @@ server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR)
 server.bind(ADDR)
 
-# users_db = [
-# 	{"id": 1, "name": "John Doe", "email": "john@example.com", "active": True},
-# 	{"id": 2, "name": "Jane Smith", "email": "jane@example.com", "active": True},
-# ]
-# next_user_id = 3
+users_db = [
+	{"id": 1, "name": "John Doe", "email": "john@example.com", "active": True},
+	{"id": 2, "name": "Jane Smith", "email": "jane@example.com", "active": True},
+]
+next_user_id = 3
 
 def create_http_responce(status_code, body, content_type="text/plain"):
     status_codes = {
