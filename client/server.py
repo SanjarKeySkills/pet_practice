@@ -46,7 +46,11 @@ class HTTPReuest:
                 self.path = path_parts[0]
                 if len(path_parts) > 1:
                     self.query_params = self.parse_query_params(path_parts[1])
-    
+
+			i = 1
+			while i < len(lines) and lines[i]:
+				if ':' in lines[i]:
+					
     
     
 def create_http_responce(status_code, body, content_type="text/plain"):
