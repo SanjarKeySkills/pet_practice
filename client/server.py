@@ -22,6 +22,7 @@ users_db = [
 next_user_id = 3
 
 class HTTPReuest:
+    
     def _init_(self, raw_request):
         self.method = ""
         self.path = ""
