@@ -60,7 +60,13 @@ class HTTPReuest:
 
 		except Exception as e:
 			print(f"Error parsing reuest: {e}")
-					
+
+#parse query params
+
+
+
+
+
     def get_json(self):
         """Parse JSON body"""
         try:
