@@ -63,7 +63,17 @@ class HTTPReuest:
 					
     def get_json(self):
         """Parse JSON body"""
-    
+        try:
+            return json.loads(self.body) if self.body else {}
+        except json.JSONDecodeError:
+            return {}
+        
+        
+        
+        
+        
+        
+        
 def create_http_responce(status_code, body, content_type="text/plain"):
     status_codes = {
 		200: "200 OK",
