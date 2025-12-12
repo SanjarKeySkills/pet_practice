@@ -61,7 +61,8 @@ class HTTPReuest:
 		except Exception as e:
 			print(f"Error parsing reuest: {e}")
 					
-    
+    def get_json(self):
+        """Parse JSON body"""
     
 def create_http_responce(status_code, body, content_type="text/plain"):
     status_codes = {
