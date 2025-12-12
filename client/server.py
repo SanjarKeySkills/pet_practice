@@ -52,6 +52,10 @@ class HTTPReuest:
 				if ':' in lines[i]:
 					key, value = lines[i].split(':', 1)
 					self.headers[key.strip()] = value.strip()
+				i += 1
+    
+			if i + 1 < len(lines):
+				self.body
 					
     
     
