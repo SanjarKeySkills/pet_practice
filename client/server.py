@@ -56,6 +56,9 @@ class HTTPReuest:
     
 			if i + 1 < len(lines):
 				self.body = '\r\n'.join(lines[i+1:])
+
+		except Exception as e:
+			print(f"Error parsing reuest: {e}")
 					
     
     
