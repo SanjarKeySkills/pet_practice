@@ -55,7 +55,7 @@ class HTTPReuest:
 				i += 1
     
 			if i + 1 < len(lines):
-				self.body
+				self.body = '\r\n'.join(lines[i+1:])
 					
     
     
