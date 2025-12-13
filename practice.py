@@ -29,12 +29,12 @@
 #         continue
 #     print(num)
 
-count = 0
-while count < 3:
-    print(f"count: {count}")
-    count +=1
-else:
-    print("loop is completed")
+# count = 0
+# while count < 3:
+#     print(f"count: {count}")
+#     count +=1
+# else:
+#     print("loop is completed")
     
 count = 0
 while count < 3:
