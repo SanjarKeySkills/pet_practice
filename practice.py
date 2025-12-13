@@ -29,3 +29,6 @@
 #         continue
 #     print(num)
 
+count = 0
+while count < 3:
+    print(f"count: {count}")
