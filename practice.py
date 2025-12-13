@@ -35,3 +35,10 @@ while count < 3:
     count +=1
 else:
     print("loop is completed")
+    
+count = 0
+while count < 3:
+    if count == 2:
+        break
+    print(count)
+    count += 1
