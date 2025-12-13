@@ -42,3 +42,5 @@ while count < 3:
         break
     print(count)
     count += 1
+else:
+    print("this wll not be printed")
