@@ -37,7 +37,7 @@
 #     print("loop is completed")
     
 count = 0
-while count < 3:
+while count < 9:
     if count == 2:
         break
     print(count)
