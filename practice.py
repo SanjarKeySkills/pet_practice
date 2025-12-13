@@ -21,11 +21,11 @@
 #     if count >= 5:
 #         break
 
+# num_insert = int(input("please insert a number from 1 to 20 and we print only even num in this range: "))
+# num = num_insert
+# while num < 20:
+#     num += 1
+#     if num % 2 == 0:
+#         continue
+#     print(num)
 
-num_insert = int(input("please insert a number from 1 to 20 and we print only even num in this range: "))
-num = num_insert
-while num < 20:
-    num += 1
-    if num % 2 == 0:
-        continue
-    print(num)
