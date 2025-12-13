@@ -38,7 +38,7 @@
     
 count = 0
 while count < 9:
-    if count == 6:
+    if count == 10:
         break
     print(count)
     count += 1
