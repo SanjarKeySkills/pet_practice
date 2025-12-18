@@ -10,3 +10,4 @@ def has_duplicate_brute_force(nums):
         for j in range(i + 1, n):
             if nums[i] == nums[j]:
                 return True
+    return False
