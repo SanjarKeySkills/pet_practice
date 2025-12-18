@@ -11,3 +11,4 @@ def has_duplicate_brute_force(nums):
             if nums[i] == nums[j]:
                 return True
     return False
+# Big O: O(n^2)
