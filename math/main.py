@@ -55,4 +55,4 @@ def merge(left, right):
 # Пример использования
 arr = [120, 55, 38, 27, 43, 3, 9, 82, 10]
 sorted_arr = merge_sort(arr)
-print(f"Отсортированный массив: {sorted_arr}")
+print(f"Хаха - Это! Отсортированный массив: {sorted_arr}")
