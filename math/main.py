@@ -60,3 +60,11 @@ print(f"Хаха - Это! Отсортированный массив: {sorted_
 # -----------------------------------------
 # Встроенная сортировка Python (Timsort)
 
+def python_sort_example(arr):
+    """Встроенная функция sorted() использует Timsort - O(N log N)"""
+    return sorted(arr)  # O(N log N)
+
+# Пример
+numbers = [5, 2, 9, 1, 5, 6]
+sorted_numbers = python_sort_example(numbers)
+print(f"Сортировка через sorted(): {sorted_numbers}")
