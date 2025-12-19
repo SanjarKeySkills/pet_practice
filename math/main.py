@@ -68,4 +68,21 @@ def python_sort_example(arr):
 numbers = [5, 2, 9, 1, 5, 6, 8, 11, 4, 23, 3]
 sorted_numbers = python_sort_example(numbers)
 print(f"Сортировка через sorted(): {sorted_numbers}")
-#------------------------
+#--------------Heap sort-----------
+import heapq
+
+def heap_sort(arr):
+    """Сортировка кучей - O(N log N)"""
+    heap = arr[:]
+    heapq.heapify(heap)  # Преобразуем в кучу - O(N)
+    
+    sorted_arr = []
+    while heap:
+        sorted_arr.append(heapq.heappop(heap))  # O(log N), вызывается N раз
+    
+    return sorted_arr
+
+# Пример
+arr = [64, 34, 25, 12, 22, 11, 90]
+result = heap_sort(arr)
+print(f"Сортировка кучей: {result}")
