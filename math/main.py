@@ -53,6 +53,6 @@ def merge(left, right):
     return result
 
 # Пример использования
-arr = [38, 27, 43, 3, 9, 82, 10]
+arr = [120, 55, 38, 27, 43, 3, 9, 82, 10]
 sorted_arr = merge_sort(arr)
 print(f"Отсортированный массив: {sorted_arr}")
