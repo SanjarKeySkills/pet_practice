@@ -65,6 +65,6 @@ def python_sort_example(arr):
     return sorted(arr)  # O(N log N)
 
 # Пример
-numbers = [5, 2, 9, 1, 5, 6, 8, 11, 23, 3]
+numbers = [5, 2, 9, 1, 5, 6, 8, 11, 4, 23, 3]
 sorted_numbers = python_sort_example(numbers)
 print(f"Сортировка через sorted(): {sorted_numbers}")
