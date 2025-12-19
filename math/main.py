@@ -14,7 +14,6 @@ def has_duplicate_brute_force(nums):
 # Big O: O(n^2)
 
 # Merge Sort
-
 def merge_sort(arr):
     """Сортировка слиянием - классический пример O(N log N)"""
     if len(arr) <= 1:
