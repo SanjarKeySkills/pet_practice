@@ -85,6 +85,6 @@ def heap_sort(arr):
     return sorted_arr
 
 # Пример
-arr = [64, 34, 25, 12, 22, 11, 90]
+arr = [64, 34, 25, 12, 22, 1, 11, 90, 10, 20, 15]
 result = heap_sort(arr)
 print(f"Сортировка кучей: {result}")
