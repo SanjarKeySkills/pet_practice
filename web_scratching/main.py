@@ -28,4 +28,4 @@ def scrape_news_site():
         all_articles.append(article_data)
         print(f"Собрана статья: {article_data.get('headline', [''])[0]}")
     
-    return all_articles~
+    return all_articles
