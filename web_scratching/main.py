@@ -1,5 +1,5 @@
 def scrape_news_site():
-    scraper = WebScraper(base_url="https://news.example.com")
+    scraper = WebScraper(base_url="https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets")
     
     # Селекторы для новостного сайта
     selectors = {
