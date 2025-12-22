@@ -11,13 +11,13 @@ def scrape_news_site():
     }
     
     # Собираем данные с главной страницы
-    html = scraper.fetch_page("https://news.example.com/latest")
+    html = scraper.fetch_page("https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets")
     soup = BeautifulSoup(html, 'html.parser')
     
     # Находим ссылки на статьи
     article_links = []
     for article in soup.select('.article-preview a'):
-        link = urljoin("https://news.example.com/latest", article['href'])
+        link = urljoin("https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets", article['href'])
         article_links.append(link)
     
     # Собираем данные со статей
