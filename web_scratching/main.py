@@ -1,5 +1,5 @@
 def scrape_news_site():
-    scraper = WebScraper(base_url="https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets")
+    scraper = WebScraper(base_url="")
     
     # Селекторы для новостного сайта
     selectors = {
@@ -11,13 +11,13 @@ def scrape_news_site():
     }
     
     # Собираем данные с главной страницы
-    html = scraper.fetch_page("https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets")
+    html = scraper.fetch_page("")
     soup = BeautifulSoup(html, 'html.parser')
     
     # Находим ссылки на статьи
     article_links = []
     for article in soup.select('.article-preview a'):
-        link = urljoin("https://www.theguardian.com/technology/2012/aug/04/50-best-apps-chidren-smartphones-tablets", article['href'])
+        link = urljoin("", article['href'])
         article_links.append(link)
     
     # Собираем данные со статей
